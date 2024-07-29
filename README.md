@@ -3,15 +3,15 @@
 Bu projede makine öğrenimi modelleri kullanılarak meme kanseri teşhisi üzerine çalışılmıştır. 
 
 ## Veri Seti
-Kullanılan [veri seti](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) Wisconsin Üniversitesi tarafından sağlanmış olup, UCI Machine Learning Repository sitesinden alınmıştır. Veri seti, 30 özellik ve 569 örnekten oluşmaktadır. Özellikler, bir meme kütlesinin ince iğne aspirasyonunun (FNA) sayısallaştırılmış görüntüsünden hesaplanmış olup görüntüde bulunan hücre çekirdeklerinin özelliklerini açıklamaktadırlar. Veri seti, M = malignant (kötü huylu), B = benign (iyi huylu) olacak şekilde 2 sınıftan oluşmaktadır. Bu değerler, M -> 1, B -> 0 olacak şekilde sayısallaştırılarak güncellenmiştir.
+Kullanılan [veri seti](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) Wisconsin Üniversitesi tarafından hazırlanmış olup, UCI Machine Learning Repository sitesinden alınmıştır. Veri seti, 30 özellik ve 569 örnekten oluşmaktadır. Özellikler, bir meme kütlesinin ince iğne aspirasyonunun (FNA) sayısallaştırılmış görüntüsünden hesaplanmış olup görüntüde bulunan hücre çekirdeklerinin özelliklerini açıklamaktadırlar. Veri seti, M = malignant (kötü huylu), B = benign (iyi huylu) olacak şekilde 2 sınıftan oluşmaktadır. Bu değerler, M -> 1, B -> 0 olacak şekilde sayısallaştırılarak güncellenmiştir.
 
-Veri setini eğitmek ve değerlendirmek için üç makine öğrenimi modeli kullandım: KNN, SVM, Decision Tree
+Veri setini eğitmek ve değerlendirmek için üç makine öğrenimi modeli kullanılmıştır: KNN, SVM, Decision Tree
 
-KNN: KNN, bir veri noktasını en yakın komşuları arasındaki çoğunluk sınıfına göre sınıflandıran basit bir örnek tabanlı öğrenme algoritmasıdır.
-SVM: SVM, özellik uzayında farklı sınıflar arasındaki marjini maksimize eden optimal hiper düzlemi bulan denetimli bir öğrenme modelidir.
-Decision Tree: Karar ağacı, kararların ve olası sonuçların ağaç benzeri bir grafiğini kullanan bir modeldir. Özelliklere dayalı tahminler yapmak için veriyi dallara ayırır.
+KNN (K-Nearest Neighbors): Yeni bir veri noktasını sınıflandırmak için en yakın k komşusunun sınıfına bakarak karar veren denetimli bir öğrenme yöntemidir.
+SVM (Support Vector Machine): Veri noktalarını farklı sınıflara ayırmak için en iyi ayırıcı çizgiyi (veya hiper düzlemi) bulan denetimli bir öğrenme yöntemidir. Bu çizgi, sınıflar arasındaki en büyük marjini sağlamaya çalışır.
+Decision Tree: Veri noktalarını özelliklerine göre dallara ayırarak karar veren denetimli bir öğrenme yöntemidir. Her düğüm bir özelliği, her dal bir karar kuralını ve her yaprak son kararı temsil eder.
 
-Her model için elde edilen performans metrikleri, karmaşıklık matrisi ve roc eğrisi aşağıda gösterilmiştir:
+Her modelin eğitilmesi sonucu elde edilen performans metrikleri, karmaşıklık matrisi ve roc eğrisi aşağıda gösterilmiştir:
 
 ### KNN
 
