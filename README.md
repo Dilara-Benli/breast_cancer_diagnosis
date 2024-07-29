@@ -9,9 +9,11 @@ SVM hakkında biraz bilgi
 Decision Tree hakkında biraz bilgi
 
 Ve eğitim sonucunda her model için elde edilen doğruluk parametreleri:
+
 KNN
 
-![knn_metrikler4](https://github.com/user-attachments/assets/70a05adb-edde-4a21-b711-07661c77f4bf)     ![knn_conf_matrix1](https://github.com/user-attachments/assets/d57d3eb5-303b-4f58-9c4a-d91b4c360840)     ![knn_roc_curve1](https://github.com/user-attachments/assets/29baccbd-16aa-4e9a-86ea-12ea8e75befb)
+![knn_metrikler5](https://github.com/user-attachments/assets/fbbff935-f3ea-4861-a47d-a4ff913be524)     ![knn_conf_matrix2](https://github.com/user-attachments/assets/debd77dd-df93-4aac-a2df-679f5f31a77e)     ![knn_roc_curve2](https://github.com/user-attachments/assets/53cd0a07-0f60-47d8-b08e-2000561fc4b1)
+
 
 SVM
 
