@@ -10,6 +10,6 @@ Decision Tree hakkında biraz bilgi
 
 Ve eğitim sonucunda her model için elde edilen doğruluk parametreleri:
 
-![knn_conf_matrix1](https://github.com/user-attachments/assets/26b85c7d-0377-42a2-8095-042f8789b4b5) ![knn_metrikler](https://github.com/user-attachments/assets/00518c66-9205-4513-9b72-7df275f76380) ![knn_roc_curve1](https://github.com/user-attachments/assets/c3154775-ccdc-45f3-8ea2-8f73c757fab4)
+![knn_metrikler](https://github.com/user-attachments/assets/00518c66-9205-4513-9b72-7df275f76380)   ![knn_conf_matrix](https://github.com/user-attachments/assets/d494563b-767c-4859-aac6-74e4d15603ed)   ![knn_roc_curve](https://github.com/user-attachments/assets/85b50327-9a85-40a5-b722-d850c88a3c26)
 
 
