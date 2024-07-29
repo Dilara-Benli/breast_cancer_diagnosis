@@ -8,7 +8,9 @@ Kullanılan [veri seti](https://archive.ics.uci.edu/dataset/17/breast+cancer+wis
 Veri setini eğitmek ve değerlendirmek için üç makine öğrenimi modeli kullanılmıştır: KNN, SVM, Decision Tree
 
 KNN (K-Nearest Neighbors): Yeni bir veri noktasını sınıflandırmak için en yakın k komşusunun sınıfına bakarak karar veren denetimli bir öğrenme yöntemidir.
+
 SVM (Support Vector Machine): Veri noktalarını farklı sınıflara ayırmak için en iyi ayırıcı çizgiyi (veya hiper düzlemi) bulan denetimli bir öğrenme yöntemidir. Bu çizgi, sınıflar arasındaki en büyük marjini sağlamaya çalışır.
+
 Decision Tree: Veri noktalarını özelliklerine göre dallara ayırarak karar veren denetimli bir öğrenme yöntemidir. Her düğüm bir özelliği, her dal bir karar kuralını ve her yaprak son kararı temsil eder.
 
 Her modelin eğitilmesi sonucu elde edilen performans metrikleri, karmaşıklık matrisi ve roc eğrisi aşağıda gösterilmiştir:
