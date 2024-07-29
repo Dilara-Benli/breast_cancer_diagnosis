@@ -75,9 +75,7 @@ class ModelTraining:
         accuracy = round(accuracy_score(self.y_test, predictions), 3) # doğruluk
         precision = round(precision_score(self.y_test, predictions), 3) # kesinlik
         recall = round(recall_score(self.y_test, predictions), 3) # duyarlılık
-        #tn, fp, fn, tp = conf_matrix.ravel()
-        tn = conf_matrix[0][0]
-        fp = conf_matrix[0][1]
+        tn, fp, fn, tp = conf_matrix.ravel()
         specificity = round(tn / (tn + fp), 3) # özgüllük
         f1 = round(f1_score(self.y_test, predictions), 3)
         auc_score = round(roc_auc_score(self.y_test, predictions), 3)
