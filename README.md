@@ -17,11 +17,15 @@ KNN
 
 SVM
 
-![svm_metrikler2](https://github.com/user-attachments/assets/6a996e40-03ea-4b67-86d6-e7e9ba5dbd0a)     ![svm_conf_matrix1](https://github.com/user-attachments/assets/83c76657-177a-4c98-8244-078488f0508b)     ![svm_roc_curve1](https://github.com/user-attachments/assets/d627776d-d48c-499d-b01c-bada7bf454a7)
+![svm_metrics](https://github.com/user-attachments/assets/268f5c46-cb44-449d-9be0-92db217b9d93)     ![svm_conf_matrix](https://github.com/user-attachments/assets/2fa20288-0888-490a-ae96-e070fb0adea9)     ![svm_roc_curve](https://github.com/user-attachments/assets/62cdd0ab-4fb8-4c6b-92e2-18ed8e582e5c)
+
 
 Decision Tree
 
-![tree_metrikler2](https://github.com/user-attachments/assets/592a81d9-a4be-4eba-83f4-53b0506342f5)     ![tree_conf_matrix1](https://github.com/user-attachments/assets/50b81e56-af26-48a3-be44-6ecb5fef1988)     ![tree_roc_curve1](https://github.com/user-attachments/assets/dc668043-1f7d-4c64-bf95-d18b762c9fea)
+![tree_metrics](https://github.com/user-attachments/assets/4875d9cb-a19d-4527-afb7-fad425630f5f)     ![tree_conf_matrix](https://github.com/user-attachments/assets/98c133c5-e7a7-40f7-8548-133031eaf8a8)     ![tree_roc_curve](https://github.com/user-attachments/assets/abe02660-6a19-4189-a336-a4e33e41afea)
+
+
+
 
 
 
