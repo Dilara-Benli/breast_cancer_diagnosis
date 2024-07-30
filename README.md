@@ -3,7 +3,7 @@
 Bu projede makine öğrenimi modelleri kullanılarak meme kanseri teşhisi üzerine çalışılmıştır. 
 
 ## Veri Seti
-Kullanılan [veri seti](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) Wisconsin Üniversitesi tarafından hazırlanmış olup, UCI Machine Learning Repository sitesinden alınmıştır. Veri seti, 30 özellik ve 569 örnekten oluşmaktadır. Özellikler, bir meme kütlesinin ince iğne aspirasyonunun (FNA) sayısallaştırılmış görüntüsünden hesaplanmış olup görüntüde bulunan hücre çekirdeklerinin özelliklerini açıklamaktadırlar. Veri seti, M = malignant (kötü huylu), B = benign (iyi huylu) olacak şekilde 2 sınıftan oluşmaktadır. Bu değerler, M -> 1, B -> 0 olacak şekilde sayısallaştırılarak güncellenmiştir.
+Kullanılan [veri seti](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) Wisconsin Üniversitesi tarafından hazırlanmış olup, UCI Machine Learning Repository sitesinden alınmıştır. Veri seti, 30 özellik ve 569 örnekten oluşmaktadır. Özellikler, bir meme kütlesinin ince iğne aspirasyonunun (FNA) sayısallaştırılmış görüntüsünden hesaplanmıştır ve görüntüde bulunan hücre çekirdeklerinin özelliklerini açıklamaktadırlar. Veri seti, M = malignant (kötü huylu), B = benign (iyi huylu) olacak şekilde 2 sınıftan oluşmaktadır. Bu değerler, M -> 1, B -> 0 olacak şekilde sayısallaştırılarak güncellenmiştir.
 
 Veri setini eğitmek ve değerlendirmek için üç makine öğrenimi modeli kullanılmıştır: KNN, SVM, Decision Tree
 
