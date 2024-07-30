@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
@@ -64,24 +65,25 @@ class ModelTraining:
     def load_model(self, model_name):
         with open(f"{model_name}.pkl", "rb") as file:
             model = pickle.load(file)
-        #print(f"{model_name} model loaded successfully.")
         return model
 
-    def evaluate_model(self, model):
+    def calculate_evaluation_metrics(self, model):
         predictions = model.predict(self.x_test)
+
         conf_matrix = confusion_matrix(self.y_test, predictions)
         conf_matrix_disp = ConfusionMatrixDisplay(confusion_matrix=conf_matrix, display_labels=model.classes_)
         conf_matrix_disp.plot()
-        accuracy = round(accuracy_score(self.y_test, predictions), 3) # doğruluk
-        precision = round(precision_score(self.y_test, predictions), 3) # kesinlik
-        recall = round(recall_score(self.y_test, predictions), 3) # duyarlılık
+        
+        accuracy = accuracy_score(self.y_test, predictions) # doğruluk
+        precision = precision_score(self.y_test, predictions) # kesinlik
+        recall = recall_score(self.y_test, predictions) # duyarlılık
         tn, fp, fn, tp = conf_matrix.ravel()
-        specificity = round(tn / (tn + fp), 3) # özgüllük
-        f1 = round(f1_score(self.y_test, predictions), 3)
-        auc_score = round(roc_auc_score(self.y_test, predictions), 3)
-        kappa = round(cohen_kappa_score(self.y_test, predictions), 3)
+        specificity = tn / (tn + fp) # özgüllük
+        f1 = f1_score(self.y_test, predictions)
+        auc_score = roc_auc_score(self.y_test, predictions)
+        kappa = cohen_kappa_score(self.y_test, predictions)
 
-        print(f"Accuracy Score: {accuracy}\nPrecision Score: {precision}\nRecall Score: {recall}\nSpecificity Score: {specificity}\nF1 Score: {f1}\nAuc Score: {auc_score}\nKappa Score: {kappa}")
+        print(f"Accuracy Score: {accuracy:.3f}\nPrecision Score: {precision:.3f}\nRecall Score: {recall:.3f}\nSpecificity Score: {specificity:.3f}\nF1 Score: {f1:.3f}\nAuc Score: {auc_score:.3f}\nKappa Score: {kappa:.3f}")
 
         return accuracy, precision, recall, specificity, f1, auc_score, kappa
 
