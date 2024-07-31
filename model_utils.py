@@ -71,8 +71,6 @@ class ModelTraining:
         predictions = model.predict(self.x_test)
 
         conf_matrix = confusion_matrix(self.y_test, predictions)
-        conf_matrix_disp = ConfusionMatrixDisplay(confusion_matrix=conf_matrix, display_labels=model.classes_)
-        conf_matrix_disp.plot()
         
         accuracy = accuracy_score(self.y_test, predictions) # doğruluk
         precision = precision_score(self.y_test, predictions) # kesinlik
@@ -86,6 +84,12 @@ class ModelTraining:
         print(f"Accuracy Score: {accuracy:.3f}\nPrecision Score: {precision:.3f}\nRecall Score: {recall:.3f}\nSpecificity Score: {specificity:.3f}\nF1 Score: {f1:.3f}\nAuc Score: {auc_score:.3f}\nKappa Score: {kappa:.3f}")
 
         return accuracy, precision, recall, specificity, f1, auc_score, kappa
+
+    def plot_conf_matrix(self, model):
+        predictions = model.predict(self.x_test)
+        conf_matrix = confusion_matrix(self.y_test, predictions)
+        conf_matrix_disp = ConfusionMatrixDisplay(confusion_matrix=conf_matrix, display_labels=model.classes_)
+        conf_matrix_disp.plot()
 
     def plot_roc_curve(self, model):
         if hasattr(model, "predict_proba"): # knn, decision_tree

@@ -17,7 +17,9 @@ loaded_knn_model = trainer.load_model("trained_models/knn_model")
 #trainer.save_model(decision_tree_model, "trained_models/decision_tree_model")
 #loaded_decision_tree_model = trainer.load_model("trained_models/decision_tree_model")
 
+# modelin değerlendirme metriklerini(accuracy, precision, recall gibi) yazdırma
 trainer.calculate_evaluation_metrics(loaded_knn_model)
+trainer.plot_conf_matrix(loaded_knn_model)
 trainer.plot_roc_curve(loaded_knn_model)
 
 
